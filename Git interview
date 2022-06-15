@@ -1,0 +1,245 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 10.0.22000}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 ) What is GIT?\par
+\par
+GIT is a distributed version control system and source code management (SCM) system with an emphasis to handle small and large projects with speed and efficiency.\par
+\par
+2) What is a repository in GIT?\par
+\par
+A repository contains a directory named .git, where git keeps all of its metadata for the repository. The content of the .git directory are private to git.\par
+\par
+3) What is the command you can use to write a commit message?\par
+\par
+Git\par
+\par
+The command that is used to write a commit message is \ldblquote git commit \f1\endash a\rdblquote .  The \endash a on the command line instructs git to commit the new content of all tracked files that have been modified. You can use \ldblquote git add<file>\rdblquote  before git commit \endash a if new files need to be committed for the first time.\par
+\par
+4) What is the difference between GIT and SVN?\par
+The difference between GIT and SVN is\par
+\par
+a) Git is less preferred for handling extremely large files or frequently changing binary files while SVN can handle multiple projects stored in the same repository.\par
+\par
+b) GIT does not support \lquote commits\rquote  across multiple branches or tags.  Subversion allows the creation of folders at any location in the repository layout.\par
+\par
+c) Gits are unchangeable, while Subversion allows committers to treat a tag as a branch and to create multiple revisions under a tag root.\par
+\par
+5) What are the advantages of using GIT?\par
+\par
+a) Data redundancy and replication\par
+\par
+b) High availability\par
+\par
+c) Only one.git directory per repository\par
+\par
+d) Superior disk utilization and network performance\par
+\par
+e) Collaboration friendly\par
+\par
+f) Any sort of projects can use GIT\par
+\par
+6) What language is used in GIT?\par
+\par
+GIT is fast, and \lquote C\rquote  language makes this possible by reducing the overhead of runtimes associated with higher languages.\par
+\par
+7) What is the function of \lquote GIT PUSH\rquote  in GIT?\par
+\par
+\lquote GIT PUSH\rquote  updates remote refs along with associated objects.\par
+\par
+8) Why GIT better than Subversion?\par
+\par
+GIT is an open source version control system; it will allow you to run \lquote versions\rquote  of a project, which show the changes that were made to the code overtime also it allows you keep the backtrack if necessary and undo those changes.  Multiple developers can checkout, and upload changes and each change can then be attributed to a specific developer.\par
+9) What is \ldblquote Staging Area\rdblquote  or \ldblquote Index\rdblquote  in GIT?\par
+\par
+Before completing the commits, it can be formatted and reviewed in an intermediate area known as \lquote Staging Area\rquote  or \lquote Index\rquote .\par
+\par
+10) What is GIT stash?\par
+\par
+GIT stash takes the current state of the working directory and index and puts in on the stack for later and gives you back a clean working directory.  So in case if you are in the middle of something and need to jump over to the other job, and at the same time you don\rquote t want to lose your current edits then you can use GIT stash.\par
+\par
+11) What is GIT stash drop?\par
+\par
+When you are done with the stashed item or want to remove it from the list, run the git \lquote stash drop\rquote  command.  It will remove the last added stash item by default, and it can also remove a specific item if you include as an argument.\par
+\par
+12) How will you know in GIT if a branch has been already merged into master?\par
+\par
+Git branch\emdash merged lists the branches that have been merged into the current branch\par
+\par
+Git branch\emdash -no merged lists the branches that have not been merged\par
+\par
+13) What is the function of git clone?\par
+\par
+The git clone command creates a copy of an existing Git repository.  To get the copy of a central repository, \lquote cloning\rquote   is the most common way used by programmers.\par
+\par
+14) What is the function of \lquote git config\rquote ?\par
+\par
+The \lquote git config\rquote  command is a convenient way to set configuration options for your Git installation.  Behaviour of a repository, user info, preferences etc. can be defined through this command.\par
+\par
+15) What does commit object contain?\par
+\par
+a)      A set of files, representing the state of a project at a given point of time\par
+\par
+b)      Reference to parent commit objects\par
+\par
+c)       An SHAI name, a 40 character string that uniquely identifies the commit object.\par
+\par
+16) How can you create a repository in Git?\par
+\par
+In Git, to create a repository, create a directory for the project if it does not exist, and then run command \ldblquote git init\rdblquote . By running this command .git directory will be created in the project directory, the directory does not need to be empty.\par
+\par
+17) What is \lquote head\rquote  in git and how many heads can be created in a repository?\par
+\par
+A \lquote head\rquote  is simply a reference to a commit object. In every repository, there is a default head referred as \ldblquote Master\rdblquote .  A repository can contain any number of heads.\par
+\par
+18)   What is the purpose of branching in GIT?\par
+\par
+The purpose of branching in GIT is that you can create your own branch and jump between those branches. It will allow you to go to your previous work keeping your recent work intact.\par
+\par
+19) What is the common branching pattern in GIT?\par
+\par
+The common way of creating branch in GIT is to maintain one as \ldblquote Main\ldblquote\par
+\par
+\par
+branch and create another branch to implement new features. This pattern is particularly useful when there are multiple developers working on a single project.\par
+\par
+20) How can you bring a new feature in the main branch?\par
+\par
+To bring a new feature in the main branch, you can use a command \ldblquote git merge\rdblquote  or \ldblquote git pull command\rdblquote .\par
+\par
+21) What is a \lquote conflict\rquote  in git?\par
+\par
+A \lquote conflict\rquote  arises when the commit that has to be merged has some change in one place, and the current commit also has a change at the same place. Git will not be able to predict which change should take precedence.\par
+\par
+22) How can conflict in git resolved?\par
+\par
+To resolve the conflict in git, edit the files to fix the conflicting changes and then add the resolved files by running \ldblquote git add\rdblquote  after that to commit the repaired merge,  run \ldblquote git commit\rdblquote .  Git remembers that you are in the middle of a merger, so it sets the parents of the commit correctly.\par
+\par
+23) To delete a branch what is the command that is used?\par
+\par
+Once your development branch is merged into the main branch, you don\rquote t need\par
+\par
+development branch.  To delete a branch use, the command \ldblquote git branch \endash d [head]\rdblquote .\par
+\par
+24) What is another option for merging in git?\par
+\par
+\ldblquote Rebasing\rdblquote  is an alternative to merging in git.\par
+\par
+25) What is the syntax for \ldblquote Rebasing\rdblquote  in Git?\par
+\par
+The syntax used for rebase is \ldblquote git rebase [new-commit] \ldblquote\par
+\par
+26) What is the difference between \lquote git remote\rquote  and \lquote git clone\rquote ?\par
+\par
+\lquote git remote add\rquote   just creates an entry in your git config that specifies a name for a particular URL.  While, \lquote git clone\rquote  creates a new git repository by copying and existing one located at the URI.\par
+\par
+27) What is GIT version control?\par
+\par
+With the help of GIT version control, you can track the history of a collection of files and includes the functionality to revert the collection of files to another version.  Each version captures a snapshot of the file system at a certain point of time. A collection of files and their complete history are stored in a repository.\par
+\par
+28) Mention some of the best graphical GIT client for LINUX?\par
+\par
+Some of the best GIT client for LINUX is\par
+\par
+a) Git Cola\par
+\par
+b) Git-g\par
+\par
+c) Smart git\par
+\par
+d) Giggle\par
+\par
+e) Git GUI\par
+\par
+\par
+f) qGit\par
+\par
+29) What is Subgit? Why to use Subgit?\par
+\par
+\lquote Subgit\rquote  is a tool for a smooth, stress-free SVN to Git migration.  Subgit is a solution for a company -wide migration from SVN to Git that is:\par
+\par
+a) It is much better than git-svn\par
+\par
+b) No requirement to change the infrastructure that is already placed\par
+\par
+c) Allows to use all git and all sub-version features\par
+\par
+d) Provides genuine stress \endash free migration experience.\par
+\par
+30) What is the function of \lquote git diff \rquote  in git?\par
+\par
+\lquote git diff \rquote  shows the changes between commits, commit and working tree etc.\par
+\par
+31) What is \lquote git status\rquote  is used for?\par
+\par
+As \lquote Git Status\rquote  shows you the difference between the working directory and the index, it is helpful in understanding a git more comprehensively.\par
+\par
+32) What is the difference between the \lquote git diff \rquote and \lquote git status\rquote ?\par
+\par
+\lquote git diff\rquote  is similar to \lquote git status\rquote , but it shows the differences between various commits and also between the working directory and index.\par
+\par
+33) What is the function of \lquote git checkout\rquote  in git?\par
+\par
+A \lquote git checkout\rquote  command is used to update directories or specific files in your working tree with those from another branch without merging it in the whole branch.\par
+\par
+34) What is the function of \lquote git rm\rquote ?\par
+\par
+To remove the file from the staging area and also off your disk \lquote git rm\rquote  is used.\par
+\par
+35) What is the function of \lquote git stash apply\rquote ?\par
+\par
+When you want to continue working where you have left your work, \lquote git stash apply\rquote  command is used to bring back the saved changes onto the working directory.\par
+\par
+36) What is the use of \lquote git log\rquote ?\par
+\par
+To find specific commits in your project history- by author, date, content or history \lquote git log\rquote  is used.\par
+\par
+37) What is \lquote git add\rquote  is used for?\par
+\par
+\lquote git add\rquote  adds file changes in your existing directory to your index.\par
+\par
+38) What is the function of \lquote git reset\rquote ?\par
+\par
+The function of \lquote Git Reset\rquote  is to reset your index as well as the working directory to the state of your last commit.\par
+\par
+39) What is git Is-tree?\par
+\par
+\lquote git Is-tree\rquote  represents a tree object including the mode and the name of each item and the SHA-1 value of the blob or the tree.\par
+\par
+40) How git instaweb is used?\par
+\par
+\lquote Git Instaweb\rquote  automatically directs a web browser and runs webserver with an interface into your local repository.\par
+\par
+41) What does \lquote hooks\rquote  consist of in git?\par
+\par
+This directory consists of Shell scripts which are activated after running the corresponding Git commands.  For example, git will try to execute the post-commit script after you run a commit.\par
+\par
+42) Explain what is commit message?\par
+\par
+Commit message is a feature of git which appears when you commit a change. Git provides you a text editor where you can enter the modifications made in commits.\par
+\par
+43) How can you fix a broken commit?\par
+\par
+To fix any broken commit, you will use the command \ldblquote git commit\emdash amend\rdblquote . By running this command, you can fix the broken commit message in the editor.\par
+\par
+44) Why is it advisable to create an additional commit rather than amending an existing commit?\par
+\par
+There are couple of reason\par
+\par
+a)  The amend operation will destroy the state that was previously saved in a commit.  If it\rquote s just the commit message being changed then that\rquote s not an issue.  But if the contents are being amended then chances of eliminating something important remains more.\par
+\par
+b) Abusing \ldblquote git commit- amend\rdblquote  can cause a small commit to grow and acquire unrelated changes.\par
+\par
+45) What is \lquote bare repository\rquote  in GIT?\par
+\par
+To co-ordinate with the distributed development and developers team, especially when you are working on a project from multiple computers \lquote Bare Repository\rquote  is used. A bare repository comprises of a version history of your code.\par
+\par
+46) Name a few Git repository hosting services\par
+\par
+Pikacode\par
+Visual Studio Online\par
+GitHub\par
+GitEnterprise\par
+SourceForge.net\par
+\par
+\f0\par
+}
+ 
